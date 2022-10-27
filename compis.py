@@ -1,6 +1,9 @@
-file = open("codigo1.c", mode="r")
+import sys
+
+#Sintaxis de la entrada
+# programa.py archivo.c tabla_simbolos tabla_errores
+
+#Leer el archivo.c
+file = open(sys.argv[1], mode="r")
 
 print(file.read())
-
-for(word in file):
-    print(word + "\n")
